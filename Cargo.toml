@@ -24,6 +24,10 @@ name = "tests"
 opt-level = 3
 debug = true
 
+[profile.release-lto]
+inherits = "release"
+lto = true
+
 [profile.test]
 opt-level = 3
 
